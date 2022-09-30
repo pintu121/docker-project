@@ -5,4 +5,3 @@ WORKDIR /var/www/html
 RUN unzip ost-magazine.zip
 RUN copy -rvf ost-magazine/* .
 RUN rm -rf ost-magazine.zip
-CMD ["/usr/sbin/httpd", "-d", "FOREGROUND"]
