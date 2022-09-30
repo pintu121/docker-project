@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos*
 RUN yum install httpd
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page2/ost-magazine.zip /var/www/html/
 WORKDIR /var/www/html
