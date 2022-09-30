@@ -1,5 +1,5 @@
-FROM centos
-RUN yum install httpd -y
+FROM ubuntu
+RUN apt-get install httpd -y
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page2/ost-magazine.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip ost-magazine.zip
